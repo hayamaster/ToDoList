@@ -5,11 +5,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css.css">
     <title>juha's TodoList</title>
 </head>
 
 <body>
-    <h1>안녕하세요</h1>
+    <div id="wrap">
+        <div>
+            <h1 id="clock"></h1>
+            <div class="hidden" id="login-form">
+                <div class="loginText">Login</div>
+                <div class="loginBox">
+                    <form id="login-input">
+                        <input required maxlength="15" type="text" placeholder="What's your name?" />
+                        <input type="submit" value="Log In" />
+                    </form>
+                </div>
+            </div>
+            <h2 id="greeting" class="hidden"></h2>
+        </div>
+        <span id="todolist">
+            <p style="font-family:'Architects Daughter', cursive;">
+                <font size="6"><b>ToDo List</b></font>
+            </p>
+            <form id="todo-form">
+                <input type="text" placeholder="Write a To Do and Press Enter" required />
+            </form>
+            <ul id="todo-list"></ul>
+        </span>
+    </div>
+
+
+    <script src="js/background.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/todo.js"></script>
 </body>
 
 </html>
