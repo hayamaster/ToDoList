@@ -1,5 +1,5 @@
 const API = "3780bfb8052fc41beaeff6918d9837f3";
-
+const button = document.querySelector("#weatherbtn");
 
 function geoOK(position) {
     const lat = position.coords.latitude;
@@ -19,4 +19,9 @@ function geoERROR() {
     alert("Can't find you. No Weather for you.");
 }
 
-navigator.geolocation.getCurrentPosition(geoOK, geoERROR);
+function navy() {
+    button.classList.add("hidden");
+    navigator.geolocation.getCurrentPosition(geoOK, geoERROR);
+
+}
+button.onclick = navy;

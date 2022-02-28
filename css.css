@@ -157,6 +157,14 @@
     bottom:6%;
 }
 
+#weatherbtn{
+    font-family:'Architects Daughter', cursive;
+    font-weight: bold;
+    top:40%;
+    right:16%;
+    position:absolute;
+    z-index:1;
+}
 #weather{
     background-color: #F5F5DCD3;
     width:200px;
