@@ -27,9 +27,9 @@
 }
 
 #wrap{
-    width: 100%;
-    height:100%;
-    position: relative;
+    width: 100vw;
+    height:100vh;
+    position: absolute;
 }
 
 .loginBox{
@@ -78,7 +78,7 @@
     margin-left: -195px;
     position:absolute;
     border-radius: 5px;
-    border:2px solid gray;
+    border:5px ridge gray;
 }
 
 #clock{
@@ -95,7 +95,7 @@
     margin-left: -165px;
     position:absolute;
     border-radius: 5px;
-    border:2px solid gray;
+    border:4px ridge gray;
 }
 
 #todolist{
@@ -106,7 +106,7 @@
     padding:10px;
     width: 300px;
     border-radius:5px;
-    border:2px solid gray;
+    border:6px groove gray;
     position:absolute;
     left:10%
 }
@@ -140,16 +140,38 @@
 }
 .li{
     margin-top:11px;
+    font-family: 'Architects Daughter', cursive;
+    font-size:15px;
 }
 
 #quotes{
     background-color: #F5F5DCD3;
     text-align:center;
     height:110px;
-    width:400px;
-    padding:2px;
+    max-width:400px;
+    min-width:370px;
+    padding:4px;
     border: 3px dashed gray;
     position: absolute;
-    left:68%;
-    margin-top:650px;
+    left:65%;
+    bottom:6%;
+}
+
+#weather{
+    background-color: #F5F5DCD3;
+    width:200px;
+    height: 140px;
+    text-align: center;
+    position:absolute;
+    left:73%;
+    top: 7%;
+    border: 4px ridge gray;
+    border-radius:5px;
+}
+#weather p{
+    margin:3px;
+    font-family:'Architects Daughter', cursive;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    font-weight: bold;
 }

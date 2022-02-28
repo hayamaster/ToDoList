@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css.css">
     <title>Juha's TodoList</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,6 +30,11 @@
             </div>
             <h2 id="greeting" class="hidden"></h2>
         </div>
+        <div id="weather">
+            <p style="font-size:25px"></p>
+            <p style="font-size: 40px;font-family: 'IM Fell English SC', serif; padding-left:33px;"></p>
+            <p style="font-size: 23px"></p>
+        </div>
         <span id="todolist">
             <p style="font-family:'Architects Daughter', cursive;">
                 <font size="6"><b>ToDo List</b></font>
@@ -38,7 +49,7 @@
             <p style="font-family:'Architects Daughter', cursive; font-size:20px;"></p>
         </div>
     </div>
-
+    <script src="js/weather.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/login.js"></script>
