@@ -17,20 +17,19 @@
 
 <body>
     <div id="wrap">
-        <div>
-            <h1 id="clock"></h1>
-            <div class="hidden" id="login-form">
-                <div class="loginText">Login</div>
-                <div class="loginBox">
-                    <form id="login-input">
-                        <input required maxlength="15" type="text" placeholder="What's your name?" />
-                        <input type="submit" value="Log In" />
-                    </form>
-                </div>
+        <h1 id="clock"></h1>
+        <div class="hidden" id="login-form">
+            <div class="loginText">Login</div>
+            <div class="loginBox">
+                <form id="login-input">
+                    <input required maxlength="15" type="text" placeholder="What's your name?" />
+                    <input type="submit" value="Log In" />
+                </form>
             </div>
-            <h2 id="greeting" class="hidden"></h2>
         </div>
-        <div id="weather">
+        <h2 id="greeting" class="hidden"></h2>
+
+        <div id="weather" class="hidden">
             <button id="weatherbtn">
                 <font size="3">Check weather!</font>
             </button>
@@ -40,7 +39,7 @@
                 <p style="font-size: 23px"></p>
             </div>
         </div>
-        <span id="todolist">
+        <span id="todolist" class="hidden">
             <p style="font-family:'Architects Daughter', cursive;">
                 <font size="6"><b>ToDo List</b></font>
             </p>
@@ -49,7 +48,7 @@
             </form>
             <ul id="todo-list"></ul>
         </span>
-        <div id="quotes">
+        <div id="quotes" class="hidden">
             <p style="font-family:'Architects Daughter', cursive; font-size:medium;"></p>
             <p style="font-family:'Architects Daughter', cursive; font-size:20px;"></p>
         </div>
